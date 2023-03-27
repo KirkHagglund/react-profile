@@ -5,10 +5,10 @@ function Nav({ currentPage, handlePageChange }) {
     <nav>
       <div>Kirk Hagglund</div>
       <div>
-        <a href="#about" onClick={() => handlePageChange("About")}>
+        <a href="#About" onClick={() => handlePageChange("About")}>
           About
         </a>
-        <a href="Portfolio" onClick={() => handlePageChange("Portfolio")}>
+        <a href="#Portfolio" onClick={() => handlePageChange("Portfolio")}>
           Portfolio
         </a>
         <a href="#Resume" onClick={() => handlePageChange("Resume")}>

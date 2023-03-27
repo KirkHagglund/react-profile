@@ -7,10 +7,10 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 export default function MainComponent() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
+        if (currentPage === 'About') {
             return <About />;
         }
         else if (currentPage === 'Portfolio') {
