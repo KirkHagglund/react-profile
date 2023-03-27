@@ -1,0 +1,29 @@
+#about-container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-div {
+    padding: 20px;
+}
+
+.about-title {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+#profile-pic {
+    border-radius: 10px;
+    border: 5px solid blue;
+}
+
+@media screen and (max-width: 968px) {
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+} 

@@ -4,9 +4,9 @@ import '../styles/nav.css';
 
 function NavComponent({ currentPage, handlePageChange }) {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
-      <Navbar.Brand className="">Kirk Hagglund</Navbar.Brand>
-      <Nav variant="pills" defaultActiveKey="#About">
+    <Navbar id="nav-container" collapseOnSelect expand="lg" bg="secondary" variant="dark">
+      <Navbar.Brand id="title">Kirk Hagglund</Navbar.Brand>
+      <Nav id="link-bar" variant="pills" defaultActiveKey="#About">
         <Nav.Link href="#About" onClick={() => handlePageChange("About")}>
           About
         </Nav.Link>

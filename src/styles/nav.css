@@ -1,0 +1,13 @@
+#nav-container {
+    width: 100%;
+}
+
+#title {
+    font-size: 48px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#link-bar {
+    padding-right: 30px;
+}
