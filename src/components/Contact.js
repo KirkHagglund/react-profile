@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import "../styles/contact.css";
 
 function Contact() {
   // Declare necessary variables for form and set initial states
@@ -11,31 +14,49 @@ function Contact() {
     e.preventDefault();
 
     // Reset the input fields to empty
-    setName('');
-    setEmail('');
-    setContent('');
-  }
+    setName("");
+    setEmail("");
+    setContent("");
+  };
 
   // Component contents to be rendered
   return (
-    <div>
+    <div className="form-container">
       <h2>Contact Me</h2>
-      <form onSubmit={handleFormSubmit}>
-                    <div>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter Your Name" value={name} onChange={(event) => setName(event.target.value)} />
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email address</label>
-                        <input type="email" id="email" placeholder="email@gamil.com" aria-describedby="emailHelp" value={email} onChange={(event) => setEmail(event.target.value)} />
-                        
-                    </div>
-                    <div>
-                        <label htmlFor="message">Message</label>
-                        <input type="textarea" id="message" placeholder="Write Message Here" value={content} onChange={(event) => setContent(event.target.value)} />
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
+      <Form onSubmit={handleFormSubmit}>
+        <div className="mb-3">
+          <Form.Label htmlFor="name">Name</Form.Label>
+          <Form.Control
+            type="text"
+            id="name"
+            placeholder="Enter Your Name"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+          />
+        </div>
+        <div className="mb-3">
+          <Form.Label htmlFor="email">Email address</Form.Label>
+          <Form.Control
+            type="email"
+            id="email"
+            placeholder="email@gamil.com"
+            aria-describedby="emailHelp"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+        <div className="mb-3">
+          <Form.Label htmlFor="message">Message</Form.Label>
+          <Form.Control
+            type="text"
+            id="message"
+            placeholder="Write Message Here"
+            value={content}
+            onChange={(event) => setContent(event.target.value)}
+          />
+        </div>
+        <Button type="submit">Submit</Button>
+      </Form>
     </div>
   );
 }

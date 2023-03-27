@@ -1,0 +1,17 @@
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.resume-btn {
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skill-list {
+    width: fit-content;
+    margin: auto;
+}
