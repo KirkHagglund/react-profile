@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nav from './Nav';
+import NavComponent from './NavComponent';
 import About from './About';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
@@ -28,7 +28,7 @@ export default function MainComponent() {
 
     return (
         <div>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+            <NavComponent currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
         </div>
