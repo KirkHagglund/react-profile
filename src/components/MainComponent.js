@@ -24,11 +24,11 @@ export default function MainComponent() {
         }
     };
 
-    const handelPageChange = (page) => setCurrentPage(page);
+    const handlePageChange = (page) => setCurrentPage(page);
 
     return (
         <div>
-            <Nav currentPage={currentPage} handelPageChange={handelPageChange} />
+            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
         </div>
