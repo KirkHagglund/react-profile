@@ -22,7 +22,7 @@ function Contact() {
   // Component contents to be rendered
   return (
     <div className="form-container">
-      <h2>Contact Me</h2>
+      <h1>Contact Me</h1>
       <Form onSubmit={handleFormSubmit}>
         <div className="mb-3">
           <Form.Label htmlFor="name">Name</Form.Label>
