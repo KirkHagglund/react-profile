@@ -28,7 +28,7 @@
   ## Usage
   Navigate to the website URL and click on the navigation links at the top of the page. They will dynamically generate the corresponding information without waiting for the root page to reload.
 
-  Deployed Wesbite Link: 
+  [Deployed Wesbite Link](https://kirkhagglund.github.io/react-profile/) 
 
   ## License
   This project is protected by a standard MIT License. Please see license link for detailed information.
