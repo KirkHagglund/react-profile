@@ -57,13 +57,13 @@ export default function Portfolio() {
           </a>
         </div>
 
-        <div id="cheatsheet" className="project-card">
-          <a href="https://github.com/KirkHagglund/css-cheatsheet">
+        <div id="arkaterra" className="project-card">
+          <a href="https://github.com/KirkHagglund/arkaterra1">
             <Button id="btn">GitHub Repo
             </Button>
           </a>
-          <a href="https://kirkhagglund.github.io/css-cheatsheet/">
-            <Button id="btn">CSS Cheatsheet</Button>
+          <a href="https://www.arkaterra.com/">
+            <Button id="btn">Arkaterra Website</Button>
           </a>
         </div>
       </div>
